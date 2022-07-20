@@ -11,7 +11,7 @@ Kurulması gerekenler:
       https://github.com/opencv/opencv
  
  
- #OpenCV kurulum <br/>
+ ## OpenCV kurulum 
  
   ![image](https://user-images.githubusercontent.com/68062151/180008190-82050b52-fd02-47e3-86d6-15b178ee2291.png) 
 
