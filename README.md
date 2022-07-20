@@ -128,4 +128,6 @@ youtube link : https://youtu.be/RxWYrmjyO3A
 
 
 
-
+kaynaklar : 
+https://dogfeatherdesign.com/2015/11/28/opencv-3-0-microsoft-visual-studio-2015-cmake-and-c/
+https://eddiehexorz.com/opencv-tesseract-ocr-setup-for-c-in-visual-studio/#2
