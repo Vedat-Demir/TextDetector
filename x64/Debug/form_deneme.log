@@ -1,0 +1,11 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (form_deneme.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  MyForm1.cpp
+LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/FORCE' specification
+  MyForm1.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
+LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/FORCE' specification
+MSVCRTD.lib(_error_.obj) : warning LNK4006: __local_stdio_printf_options already defined in tesseract41.lib(tesseract41.dll); second definition ignored
+MSVCRTD.lib(throw_bad_alloc.obj) : warning LNK4006: "public: virtual char const * __cdecl std::exception::what(void)const " (?what@exception@std@@UEBAPEBDXZ) already defined in tesseract41.lib(tesseract41.dll); second definition ignored
+MyForm1.obj : warning LNK4248: unresolved typeref token (0100003F) for 'GenericVector<STRING>'; image may not run
+C:\Users\90553\Desktop\CPP_projects\bee_project\x64\Debug\bee_project.exe : warning LNK4088: image being generated due to /FORCE option; image may not run
+  form_deneme.vcxproj -> C:\Users\90553\Desktop\CPP_projects\bee_project\x64\Debug\bee_project.exe
+  form_deneme.vcxproj -> C:\Users\90553\Desktop\CPP_projects\bee_project\x64\Debug\bee_project.pdb (Partial PDB)
