@@ -36,3 +36,26 @@ Windows ortam değişkenlerine gidip bende aşağıdaki konumlarda olan dosylar�
 C:\Users\90553\Desktop\OpenCV\myBuild\install\x64\vc14\lib
 C:\Users\90553\Desktop\OpenCV\myBuild\install\x64\vc14\bin
 ```
+Daha sonra visual studio da yeni bir proje açın ve projeyi sağ tıklarayak properties i açın.
+"C/C++ -> General -> Additional Inlude Directories" buradaki değere build dosayasındaki "install\include\" klasörünün pathini yapıştırın. 
+
+"Linker -> General -> Additional library Directories" seçeneğine build içinde install\x64\vc14\lib pathini ekleyin.
+
+"Linker -> Input -> Additional Dependencies" seçeneğine aşağıdakileri ekleyin.
+```
+opencv_core2413d.lib
+opencv_highgui2413d.lib
+opencv_imgproc2413d.lib
+opencv_video2413d.lib
+```
+"Linker -> Advanced -> Entry Point" seçeneğine "Main" yazın
+
+Daha sonra windows ortam değişkenlerine girip aşağıdaki pathleri kendi dosya konumlarınıza göre ayarlayıpekleyin
+```
+C:\Users\90553\Desktop\OpenCV\myBuild\install\x64\vc14\lib
+C:\Users\90553\Desktop\OpenCV\myBuild\install\x64\vc14\bin
+```
+
+
+
+
