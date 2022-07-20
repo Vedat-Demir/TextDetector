@@ -124,6 +124,7 @@ zstd.lib
 ## Programı Açma
 Yukarıdaki yüklemeleri yaptıktan sonra. Projeyi indirip çalıştırabilirsiniz.
 
+youtube link : https://youtu.be/RxWYrmjyO3A
 
 
 
