@@ -76,5 +76,55 @@ int main() {
 }
 ```
 
+## Tesseract Kurulumu
+
+1) cmd yi çalıştırın
+2) Yüklemek istediğiniz dosya dizininde "git clone https://github.com/microsoft/vcpkg" yazın.
+3) Git klonlaması bitince.  “.\vcpkg\bootstrap-vcpkg.bat“ komutunu yazın
+4) Daha sonra  “.\vcpkg\vcpkg install tesseract:x64-windows“ komutunu yazın ve indirmenin tamamlanmasını bekleyin.
+5) Tamamlandıktan sonra “.\vcpkg\vcpkg integrate install“ komutunu yazın.
+6) Visual Studio u açarak project properties e girin " C/C++ > General > Additional Include Directories" seçeneğine aşağıdaki pathleri sizin dosya konumlarınıza gre düzenleyip ekleyin.
+```
+C:\vcpkg\installed\x64-windows\include
+C:\vcpkg\installed\x64-windows\include\leptonica
+C:\vcpkg\installed\x64-windows\include\tesseract
+```
+7) Linker > General > Additional Library Dependencies seçeneğine yine kendi bilgisayarınıza göre ayarlayıp aşağıdaki pathi ekleyin.
+```
+C:\vcpkg\installed\x64-windows\lib
+```
+8)Linker > Input> Additional Dependencies seçeneğine aşağıdaki .lib dosyalarını ekleyin
+```
+tesseract41.lib
+leptonica-1.80.0.lib
+archive.lib
+bz2.lib
+charset.lib
+gif.lib
+iconv.lib
+jpeg.lib
+libcrypto.lib
+libpng16.lib
+libssl.lib
+libwebpmux.lib
+libxml2.lib
+lz4.lib
+lzma.lib
+openjp2.lib
+tiff.lib
+tiffxx.lib
+turbojpeg.lib
+webp.lib
+webpdecoder.lib
+webpdemux.lib
+xxhash.lib
+zlib.lib
+zstd.lib
+```
+## Programı Açma
+Yukarıdaki yüklemeleri yaptıktan sonra. Projeyi indirip çalıştırabilirsiniz.
+
+
+
 
 
