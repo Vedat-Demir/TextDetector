@@ -11,7 +11,7 @@ Kurulması gerekenler:
       https://github.com/opencv/opencv
  
  
- **CMake : OpenCV build** <br/>
+ #OpenCV kurulum <br/>
  
   ![image](https://user-images.githubusercontent.com/68062151/180008190-82050b52-fd02-47e3-86d6-15b178ee2291.png) 
 
@@ -55,7 +55,26 @@ Daha sonra windows ortam değişkenlerine girip aşağıdaki pathleri kendi dosy
 C:\Users\90553\Desktop\OpenCV\myBuild\install\x64\vc14\lib
 C:\Users\90553\Desktop\OpenCV\myBuild\install\x64\vc14\bin
 ```
+Daha sonra openCV kütüphanesini test etmek için aşağıdaki kodu deneyebilirsiniz.
+```
+#include <opencv2/opencv.hpp>
+#include <opencv\highgui.h>
 
+using namespace cv;
+
+int main() {
+    Mat image;          //Create Matrix to store image
+    VideoCapture cap;          //initialize capture
+    cap.open(0);
+    namedWindow("window", 1);          //create window to show image
+    while (1) {
+        cap >> image;          //copy webcam stream to image
+        imshow("window", image);          //print image to screen
+        waitKey(33);          //delay 33ms
+    }
+    return 0;
+}
+```
 
 
 
