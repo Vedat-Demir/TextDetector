@@ -11,7 +11,8 @@ Kurulması gerekenler:
       https://github.com/opencv/opencv
  
  
- **CMake : OpenCV build** 
+ **CMake : OpenCV build** <br/r>
+ 
  ![image](https://user-images.githubusercontent.com/68062151/180004883-ccb2d721-8471-4fe5-bcdc-e643a46f1d55.png)
 
   1) OpenCV 2.4      
